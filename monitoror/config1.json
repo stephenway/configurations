@@ -2,7 +2,7 @@
   "version": "1.0",
   "columns": 4,
   "tiles": [
-    { "type": "PING", "label": "Prometheum.com", "params": { "hostname": "prometheum.com", "status": "SUCCESS" } },
+    { "type": "PING", "label": "Prometheum.com", "params": { "hostname": "prometheum.com" } },
     { "type": "PING", "label": "GitHub.com", "params": { "hostname": "github.com", "status": "SUCCESS" } },
     { "type": "GROUP", "label": "Local ports", "tiles": [
       { "type": "PORT", "label": "core", "params": { "hostname": "192.168.1.22", "port": 10301, "status": "SUCCESS" } },
