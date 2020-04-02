@@ -13,5 +13,6 @@
       { "type": "PING", "params": { "hostname": "prod6.monitoror.com", "status": "SUCCESS" } }
     ]},
     { "type": "GITHUB-PULLREQUESTS", "label": "Open Pull Requests", "params": { "owner": "prometheumlabs", "repository": "platform-client" } },
+    { "type": "HTTP-STATUS", "label": "This is a work in progress!", "params": { "url": "monitoror.com", "status": "UNKNOWN" } }
   ]
 }
