@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "columns": 4,
+  "tiles": [
+    { "type": "HTTP-STATUS", "label": "Prometheum.com", "params": { "url": "prometheum.com", "status": "SUCCESS" } },
+    { "type": "PING", "label": "Ping GitHub.com", "params": { "hostname": "github.com", "status": "SUCCESS" } },
+    { "type": "GROUP", "label": "Production nodes", "tiles": [
+      { "type": "PING", "params": { "hostname": "prod1.monitoror.com", "status": "SUCCESS" } },
+      { "type": "PING", "params": { "hostname": "prod2.monitoror.com", "status": "SUCCESS" } },
+      { "type": "PING", "params": { "hostname": "prod3.monitoror.com", "status": "SUCCESS" } },
+      { "type": "PING", "params": { "hostname": "prod4.monitoror.com", "status": "SUCCESS" } },
+      { "type": "PING", "params": { "hostname": "prod5.monitoror.com", "status": "SUCCESS" } },
+      { "type": "PING", "params": { "hostname": "prod6.monitoror.com", "status": "SUCCESS" } }
+    ]},
+    { "type": "GITHUB-PULLREQUESTS", "label": "Open Pull Requests", "params": { "owner": "prometheumlabs", "repository": "platform-client" } },
+  ]
+}
