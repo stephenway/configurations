@@ -12,7 +12,13 @@
       { "type": "PING", "params": { "hostname": "prod5.monitoror.com", "status": "SUCCESS" } },
       { "type": "PING", "params": { "hostname": "prod6.monitoror.com", "status": "SUCCESS" } }
     ]},
+    { "type": "GITHUB-CHECKS", "params": { "owner": "prometheumlabs", "repository": "platform-client", "ref": "develop" } },
     { "type": "GITHUB-PULLREQUESTS", "label": "Open Pull Requests", "params": { "owner": "prometheumlabs", "repository": "platform-client" } },
+    { "type": "GROUP", "label": "Backend PRs", "tiles": [
+      { "type": "GITHUB-PULLREQUESTS", "label": "Core", "params": { "owner": "prometheumlabs", "repository": "platform-core-backend" } },
+      { "type": "GITHUB-PULLREQUESTS", "label": "Investor", "params": { "owner": "prometheumlabs", "repository": "platform-investor-backend" } },
+      { "type": "GITHUB-PULLREQUESTS", "label": "Transaction", "params": { "owner": "prometheumlabs", "repository": "platform-transaction-backend" } },
+    ]},
     { "type": "HTTP-STATUS", "label": "This is a work in progress!", "params": { "url": "monitoror.com", "status": "UNKNOWN" } }
   ]
 }
