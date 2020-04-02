@@ -3,7 +3,12 @@
   "columns": 4,
   "tiles": [
     { "type": "PING", "label": "Prometheum.com", "params": { "hostname": "prometheum.com", "status": "SUCCESS" } },
-    { "type": "PING", "label": "Ping GitHub.com", "params": { "hostname": "github.com", "status": "SUCCESS" } },
+    { "type": "PING", "label": "GitHub.com", "params": { "hostname": "github.com", "status": "SUCCESS" } },
+    { "type": "GROUP", "label": "Local ports", "tiles": [
+      { "type": "PORT", "label": "core", "params": { "hostname": "192.168.1.22", "port": 10301, "status": "SUCCESS" } },
+      { "type": "PORT", "label": "investor", "params": { "hostname": "192.168.1.22", "port": 10310, "status": "SUCCESS" } },
+      { "type": "PORT", "label": "transaction", "params": { "hostname": "192.168.1.22", "port": 10320, "status": "SUCCESS" } }
+    ]},
     { "type": "GROUP", "label": "Production nodes", "tiles": [
       { "type": "PING", "params": { "hostname": "prod1.monitoror.com", "status": "SUCCESS" } },
       { "type": "PING", "params": { "hostname": "prod2.monitoror.com", "status": "SUCCESS" } },
@@ -13,13 +18,7 @@
       { "type": "PING", "params": { "hostname": "prod6.monitoror.com", "status": "SUCCESS" } }
     ]},
     { "type": "GITHUB-CHECKS", "params": { "owner": "prometheumlabs", "repository": "platform-client", "ref": "develop" } },
-    { "type": "GITHUB-PULLREQUESTS", "label": "Open Pull Requests", "params": { "owner": "prometheumlabs", "repository": "platform-client" } },
-    { "type": "GROUP", "label": "Backend PRs", "tiles": [
-      { "type": "GITHUB-PULLREQUESTS", "label": "Core", "params": { "owner": "prometheumlabs", "repository": "platform-core-backend" } },
-      { "type": "GITHUB-PULLREQUESTS", "label": "Investor", "params": { "owner": "prometheumlabs", "repository": "platform-investor-backend" } },
-      { "type": "GITHUB-PULLREQUESTS", "label": "Transaction", "params": { "owner": "prometheumlabs", "repository": "platform-transaction-backend" } }
-    ]},
-    { "type": "HTTP-STATUS", "label": "This is a work in progress!", "params": { "url": "monitoror.com", "status": "UNKNOWN" } }
+    { "type": "GITHUB-PULLREQUESTS", "label": "Open Pull Requests", "params": { "owner": "prometheumlabs", "repository": "platform-client" } }
   ]
 }
 
