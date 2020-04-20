@@ -2,8 +2,10 @@
   "version": "1.0",
   "columns": 4,
   "tiles": [
-    { "type": "PING", "label": "Prometheum.com", "params": { "hostname": "prometheum.com" } },
-    { "type": "PING", "label": "VPN", "params": { "hostname": "vpn.promethdev.com" } },
+    { "type": "GROUP", "label": "Prometheum", "tiles": [
+      { "type": "PING", "label": "Prometheum.com", "params": { "hostname": "prometheum.com" } },
+      { "type": "PING", "label": "VPN", "params": { "hostname": "vpn.promethdev.com" } }
+    ]),
     { "type": "PING", "label": "GitHub.com", "params": { "hostname": "github.com" } },
     { "type": "PING", "label": "Hearthstone", "params": { "hostname": "24.105.30.129" } },
     { "type": "GROUP", "label": "Local ports", "tiles": [
