@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "columns": 4,
   "tiles": [
     { "type": "GROUP", "label": "Prometheum", "tiles": [
@@ -14,16 +14,8 @@
       { "type": "PORT", "params": { "hostname": "192.168.1.22", "port": 10310 } },
       { "type": "PORT", "params": { "hostname": "192.168.1.22", "port": 10320 } }
     ]},
-    { "type": "GROUP", "label": "Production nodes", "tiles": [
-      { "type": "PING", "params": { "hostname": "prod1.monitoror.com", "status": "SUCCESS" } },
-      { "type": "PING", "params": { "hostname": "prod2.monitoror.com", "status": "SUCCESS" } },
-      { "type": "PING", "params": { "hostname": "prod3.monitoror.com", "status": "SUCCESS" } },
-      { "type": "PING", "params": { "hostname": "prod4.monitoror.com", "status": "SUCCESS" } },
-      { "type": "PING", "params": { "hostname": "prod5.monitoror.com", "status": "SUCCESS" } },
-      { "type": "PING", "params": { "hostname": "prod6.monitoror.com", "status": "SUCCESS" } }
-    ]},
     { "type": "GITHUB-CHECKS", "params": { "owner": "prometheumlabs", "repository": "platform-client", "ref": "develop" } },
-    { "type": "GITHUB-PULLREQUESTS", "label": "Open Pull Requests", "params": { "owner": "prometheumlabs", "repository": "platform-client" } }
+    { "type": "GENERATE:GITHUB-PULLREQUESTS", "label": "Open Pull Requests", "params": { "owner": "prometheumlabs", "repository": "platform-client" } }
   ]
 }
 
